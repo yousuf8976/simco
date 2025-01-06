@@ -1,0 +1,868 @@
+*{
+    user-select: none;
+  }
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+  
+   }
+  body {
+      margin: 0;
+      scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: .5em;
+    height: 0;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: black;
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.759);
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .section {
+      font-family: "Space Grotesk", serif;
+      position: relative;
+      background: url('../img/graph.png');
+      color: white;
+      padding: 80px 20px;
+      overflow: hidden;
+     
+  }
+  
+  .prepaid {
+      font-size: 80px;
+  }
+  
+  .row p {
+      color: #dddd;
+      font-weight: 300;
+      font-size: 1.0rem;
+      line-height: 1.8;
+      text-align: center;
+  }
+  
+
+  .text-center.picture {
+      margin-top: 40px; /* Adjusted margin for spacing */
+  }
+  
+  .text-center.picture img {
+      width: 800px; /* Width set to 800px */
+      height: 400px; /* Height set to 400px */
+      object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  }
+  
+  .slider {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 10%;
+      width: 100%;
+      background-color: #f08f74;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  
+@media (min-width: 996px),(max-width:1400px) {
+  .txt12{
+    margin-left:15% ;
+  }
+.prepaid{
+  font-size: 58px !important;
+}
+.line
+{
+ height: 0px !important; 
+
+  
+}
+
+ }
+ @media (max-width: 768px){
+  .txt12{
+    margin-left: 0% !important;
+  }
+ }
+
+ 
+@media (min-width: 1400px){
+  .prepaid{
+    font-size: 80px !important;
+  }
+}
+
+
+  .slider-content {
+      display: block;
+   
+      display: flex;
+      gap: 40px; /* Adjust spacing between items */
+  
+  }
+  
+  .slider-item {
+      flex-shrink: 0;
+      font-size: 1.5rem;
+      color: black;
+      font-weight: bolder;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: flex;
+   
+      align-items: center;
+      gap: 5px; /* Space between text and asterisk */
+  }
+  @keyframes slide-left {
+      50% {
+          transform: translateX(-100%);
+      }
+      
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+  .line {
+    width: 2px;
+    height: 150px; /* Adjust the height to increase the gap */
+    background-color:#313131;
+    margin-left: 100px; /* Adjust the right margin to control spacing */
+}
+
+p {
+  
+    text-align: left;
+}
+
+.fz-50 {
+    font-family: "Sora", serif;
+    font-size: 60px;
+ }
+
+.stroke.icon {
+    color:transparent;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1.0px;
+    -webkit-text-stroke-color:black;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .prepaid {
+        font-size: 40px !important; /* Reduce font size for smaller screens */
+    }
+
+    .line {
+        height: 0px; /* Adjust line height for smaller screens */
+    }
+
+    .slider-item {
+        font-size: 1,5rem; /* Adjust font size for smaller screens */
+    }
+
+    .fz-50 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  
+  
+  .portfolio-section {
+      padding: 50px 30px;
+      background-color:#1d1d1d !important; /* Clean white background */
+    }
+    
+    .portfolio-heading {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #1d1d1d; /* Black text */
+    }
+    
+    .selected-heading {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #1d1d1d; /* Black text */
+    }
+    
+    /* Card Container */
+    .card {
+      background-color: #1d1d1d !important;
+      display: flex;
+      flex-direction: row; /* Image and content side-by-side */
+      align-items: center; /* Vertically center text */
+      max-width: 300px; /* Match image width */
+      border: none !important;
+      margin: 15px auto; /* Center cards with space */
+    font-family: "Space Grotesk", serif !important;
+    }
+    
+    .card img {
+      width: 300px; /* Fixed image size */
+      height: 300px;
+      object-fit: cover; /* Keep image clean and cropped */
+    
+    }
+    
+    .card-body {
+      flex: 1;
+      padding: 15px;
+      text-align: left;
+    }
+    
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: white !important; /* Black text */
+      margin-bottom: 10px;
+    }
+    
+    .card-text {
+      font-size: 14px;
+      color: #ddd; /* Subtle gray for description */
+      margin: 0;
+    }
+    
+  
+  /* Trust Line Styling */
+  .trust-line {
+      font-family: "Space Grotesk", serif;
+      font-size: 15px;
+      font-weight:400;
+      color: #1d1d1d;
+      padding-top: 10px;
+      margin-top: 20px;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+  
+    /* Image Slider Styling */
+    .slider-container {
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .slider-images {
+      display: flex;
+      animation: slide 20s infinite linear;
+    }
+  
+    .slider-img {
+      width: 100%;
+      max-width: 200px;
+      margin-right: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+  
+    /* Adding hover effect on images for a dynamic look */
+    .slider-img:hover {
+      transform: scale(1.05);
+    }
+  
+    /* Keyframes for the image slider animation */
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .technology-expertise-section {
+      padding: 60px 0;
+      text-align: left;
+      margin: 0 auto;
+  }
+  
+  .heading2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-family: "Space Grotesk", serif !important;
+      color: white;
+  }
+  
+  .expertise-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px; /* Gap between items */
+      border-bottom: 1px solid #444; /* Border below each item */
+      padding-bottom: 15px; /* Space below each item */
+  }
+  
+  .expertise-item img {
+      margin-right: 20px; /* Gap between image and text */
+  }
+  
+  .text-content {
+      display: flex;
+      flex-direction: column; /* Align subheading and description vertically */
+      gap: 5px; /* Clean gap between subheading and description */
+  }
+  
+  .subheading {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      font-family: "Space Grotesk", serif !important;
+  }
+  
+  .expertise-item p {
+      font-size: 16px;
+      color: white;
+      line-height: 1.5; /* For better readability */
+  }
+  
+  .main3 img {
+      width:auto; /* Adjusted size of the large image */
+      height: auto; /* Keep aspect ratio */
+  
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+      .main img {
+          margin: 20px auto;
+          display: block;
+          width: 300px;
+      }
+  
+      .heading2 {
+          font-size: 30px;
+      }
+  }
+  
+  .why-choose-us-section {
+    padding: 60px 0;
+    text-align: left;
+    margin: 0 auto; /* Center the section */
+  }
+  
+  .why-choose-us-section img {
+    width: 100%; /* Ensure the image is responsive */
+    margin-top: 30px; /* Add spacing for small screens */
+  }
+  
+  .why-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Space Grotesk", serif !important;
+    color: white;
+  }
+  
+  .why-points {
+    
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .why-points li {
+    margin-bottom: 20px; /* Add spacing between each point */
+    font-size: 17px;
+    color: #ddd;
+    font-family: "Space Grotesk", serif !important;
+    line-height: 1.6; /* Improve readability */
+    display: flex; /* Allow for optional icons or bullets later */
+    align-items: flex-start;
+    font-weight: 50;
+  }
+  
+  .why-points li:before {
+    content: "✔"; /* Add a checkmark icon */
+    color: white; /* Green checkmark */
+    margin-right: 10px; /* Space between checkmark and text */
+    font-size: 18px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .col-md-6 {
+        margin-top: 20px; /* Add space for small screens */
+    }
+  
+    .why-choose-us-section img {
+        margin: 20px auto; /* Center the image below the points */
+        display: block;
+    }
+  }
+  
+  .featured-services-section {
+    padding: 60px 0;
+    text-align: left;
+    margin: 0 auto; /* Center the section */
+  }
+  
+  .heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Space Grotesk", serif !important;
+    color: white;
+  }
+  
+  .featured-heading {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Space Grotesk", serif !important;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .service-detail {
+    margin-bottom: 40px; /* Gap between items */
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1.0px solid #444; /* Border below each item */
+    padding-bottom: 15px; /* Space below each item */
+    transition: 0.3s;
+  }
+  .service-item:hover{
+    border-bottom: 1.0px solid white;
+  }
+  
+  .service-item img {
+    margin-right: 20px; /* Gap between image and text */
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column; /* Align subheading and description vertically */
+    gap: 5px; /* Clean gap between subheading and description */
+  }
+  
+  .subheading {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: "Space Grotesk", serif !important;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5; /* For better readability */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .service-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    .txt{
+      text-align: center!important;
+    }
+    
+    .service-item img {
+        margin-bottom: 10px; /* Space below image */
+    }
+  }
+  .Right{
+    margin-top: 159px !important;
+  }
+  @media (min-width: 994px) and (max-width: 1200px) {
+    .Right {
+        order: 2;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .Right{
+      margin-top: 0px !important;
+    }
+    .subheading{
+      text-align: center;
+    }
+  }
+  
+  .faq-section {
+    margin-top: 5rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 3.5rem;
+  }
+  .heading1{
+    font-size: 45px;
+    font-family: "Space Grotesk", serif !important;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .question {
+    color: #ddd;
+    cursor: pointer;
+    display: flex;
+    font-size: 17px;
+    font-family: "Space Grotesk", serif !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle-sign {
+    font-size: 1.5rem;
+    color: #ddd;
+  }
+  
+  .faq-divider {
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media (max-width: 1200px) {
+    .faq-section {
+        margin-top: 2rem;
+    }
+  }
+  @media (max-width: 768px){
+    .heading1{
+      font-size: 35px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  }
+  .collapse{
+    font-weight: 400;
+    font-family: "Space Grotesk", serif !important;
+    color: #ddd;
+    
+    transition: all 0.3s ease-in-out; 
+    
+  }
+  .review-container {
+    position: relative;
+    height: 600px; /* Adjust based on the height of your cards */
+    overflow: hidden;
+  }
+  
+  .review-cards {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    flex-wrap: wrap; /* Wrap items if needed */
+    justify-content: space-between; /* Distribute space between cards */
+    animation: slideUp 40s infinite linear; /* Continuous loop animation */
+  }
+  
+  /* Review Card Styling */
+  .review-card {
+    background-color: #222222;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px; /* Reduced margin for a tighter layout */
+    color: white;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+    font-family: "Space Grotesk", serif;
+  }
+  
+  .review-card:hover {
+    opacity: 1;
+  }
+  
+  .rating {
+    margin-bottom: 15px;
+  }
+  
+  .rating i {
+    font-size: 15px;
+  }
+  
+  .review-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .client-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .position-name {
+    font-size: 15px;
+    font-weight: 200;
+    color: #f08f74;
+  }
+  
+  .client-picture {
+    margin-top: 15px;
+  }
+  
+  .client-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  * Review Section Styling */
+  .review-container {
+    position: relative;
+    height: 600px; /* Adjust based on the height of your cards */
+    overflow: hidden;
+  }
+  
+  .review-cards {
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 40s infinite linear;  /* Continuous loop animation */
+  }
+  
+  /* Review Card Styling */
+  .review-card {
+    background-color: #222222;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0;
+    color: white;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+    
+    font-family: "Space Grotesk", serif;
+  }
+  
+  .review-card:hover {
+    opacity: 1;
+  }
+  
+  .rating {
+    margin-bottom: 15px;
+  }
+  
+  .rating i {
+    font-size: 15px;
+  }
+  
+  .review-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .client-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ccc;
+  }
+  .position-name{
+    font-size: 15px;
+    font-weight: 200;
+    color: #f08f74;
+  }
+  
+  .client-picture {
+    margin-top: 15px;
+  }
+  
+  .client-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Keyframes for Continuous Smooth Vertical Scrolling (Bottom to Top) */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);  /* Start from the bottom */
+    }
+    100% {
+      transform: translateY(-100%);  /* End at the top */
+    }
+  }
+  
+  /* Pause Animation on Hover */
+  .review-container:hover .review-cards {
+    animation-play-state: paused; /* Stops animation when hovering */
+  }
+  .review-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .client-info {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    margin-top: 10px; /* Adds space between the review and the client info */
+  }
+  
+  .client-picture {
+    margin-right: 15px; /* Adds space between the image and the text */
+  }
+  
+  .client-img {
+    width: 50px; /* Adjust image size */
+    height: 50px; /* Adjust image size */
+    border-radius: 50%; /* Make the image circular */
+  }
+  
+  .client-details {
+    display: flex;
+    flex-direction: column; /* Ensures name and position are stacked vertically */
+  }
+  
+  .client-name {
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .position-name {
+    font-size: 0.9rem;
+    padding: 0%;
+    margin: 0%;
+    color: #f08f74; /* Lighter color for position */
+  }
+  @media (max-width: 767.98px) {
+    .no-ms-small {
+      margin-left: 0 !important;
+    }
+  }
+  .review-cards {
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 30s infinite linear; /* Continuous loop animation */
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0); /* Start at the top */
+    }
+    100% {
+      transform: translateY(-100%); /* End at the bottom */
+    }
+  }
+  
+  /* Fix for seamless looping */
+  .review-cards {
+    position: relative;
+    animation-timing-function: linear;
+  }
+  
+  .review-container {
+    position: relative;
+    height: 600px; /* Adjust based on the height of your cards */
+    overflow: hidden;
+  }
+  
+  /* Pause Animation on Hover */
+  .review-container:hover .review-cards {
+    animation-play-state: paused;
+  }
+  
+  
+  .review-container:before,
+  .review-container:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px; /* Adjust height for the gradient effect */
+    pointer-events: none; /* Prevent interaction with the gradient */
+    z-index: 2; /* Ensure the gradient is on top of the cards */
+  }
+  
+  .review-container:before {
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent); /* Lighter black */
+  }
+  
+  .review-container:after {
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent); /* Lighter black */
+  }
+  .man{
+    height: 600px !important;
+  }
+  @media (max-width: 768px){
+    .man{
+      height: 400px !important;
+    }
+  }
+  .txt1{
+    font-size: 45px;
+      font-weight: bold;
+    font-family: "Space Grotesk", serif !important;
+  }
+
+  .featured-services-section .border-bottom {
+    border-color: #444 !important; /* Light gray color for the border */
+    border-width: 1px;
+  }
+  
+.explore-now-btn {
+  background-color: #1a1a1a; /* Button color */
+  color: white; /* Text color */
+  padding: 15px 30px; /* Padding for button */
+  font-size: 18px; /* Text size */
+  font-weight: bold; /* Text weight */
+  border: 1px solid white;
+  border-radius: 50px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  position: absolute;
+  left: 110px; /* Distance from the left edge of the image */
+  top: 70%; /* Vertically center the button */
+  transform: translateY(-50%); /* Adjust for exact vertical centering */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+
+.explore-now-btn:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white; /* Darker button color on hover */
+  transform: translateY(-50%) scale(1.05); /* Slightly enlarge on hover */
+}
+@media (max-width: 768px) {
+  .explore-now-btn {
+      display: none; /* Hide button on small screens */
+  }
+}
+
+ @media (min-width: 996px) and (max-width: 1420px) {
+  /* Your styles for screens between 996px and 1420px */
+  .explore-now-btn {
+    display: none; /* Hide button on medium and small screens */
+}
+
+}
+@media (min-width: 769px) and (max-width: 996px) {
+  /* Your styles for screens between 996px and 1420px */
+  .explore-now-btn {
+    display: none; /* Hide button on medium and small screens */
+}
+
+}
+.man{
+  margin-left: 20% !important;
+  height: 600px !important;
+}
+@media (max-width: 768px){
+  .man{
+    margin-bottom: 10% !important;
+    margin-left: 13% !important;
+    height: 400px !important;
+  }
+}
