@@ -82,7 +82,7 @@ body {
 .slider-item {
     flex-shrink: 0;
     font-size: 1.5rem;
-    color: black;
+    color: #089e9e;
     font-weight: bolder;
     white-space: nowrap;
     text-overflow: ellipsis;
