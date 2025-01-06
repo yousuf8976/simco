@@ -75,6 +75,11 @@ font-family: "Space Grotesk", serif;
 
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
+
+  
+  .index-h{
+    font-size: 35px !important;
+  }
     .connectivity-section h1 {
         font-size: 28px;
     }
